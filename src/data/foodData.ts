@@ -313,7 +313,7 @@ export const pakistaniFoods: FoodItem[] = [
     id: '8',
     name: 'Gulab Jamun',
     urduName: 'گلاب جامن',
-    image: 'https://images.unsplash.com/photo-1666190050071-7b97fac50c41?w=800',
+    image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=800',
     description: 'Deep-fried milk dumplings soaked in rose-scented sugar syrup. The most beloved Pakistani dessert!',
     prepTime: '20 mins',
     cookTime: '30 mins',
