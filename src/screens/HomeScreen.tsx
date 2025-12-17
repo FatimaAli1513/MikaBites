@@ -117,13 +117,13 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
               </TouchableOpacity>
             </View>
 
-            {/* Owner Info */}
+            {/* Company Info */}
             <View style={styles.ownerSection}>
               <View style={styles.avatarContainer}>
-                <Text style={styles.avatarText}>👨‍🍳</Text>
+                <Text style={styles.avatarText}>🍽️</Text>
               </View>
-              <Text style={styles.ownerName}>Mika</Text>
-              <Text style={styles.ownerRole}>App Developer & Food Enthusiast</Text>
+              <Text style={styles.ownerName}>MIKAEL FOODS</Text>
+              <Text style={styles.ownerRole}>Authentic Pakistani Cuisine</Text>
             </View>
 
             {/* Description */}
@@ -135,33 +135,18 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
               </Text>
             </View>
 
-            {/* Contact Info */}
+            {/* Address */}
             <View style={styles.contactSection}>
-              <Text style={styles.sectionLabel}>Contact & Connect</Text>
+              <Text style={styles.sectionLabel}>Our Location</Text>
               
-              <TouchableOpacity
-                style={styles.contactItem}
-                onPress={() => openLink('mailto:mika@mikabites.com')}
-              >
-                <Text style={styles.contactIcon}>📧</Text>
-                <Text style={styles.contactText}>mika@mikabites.com</Text>
-              </TouchableOpacity>
-
-              <TouchableOpacity
-                style={styles.contactItem}
-                onPress={() => openLink('https://instagram.com/mikabites')}
-              >
-                <Text style={styles.contactIcon}>📸</Text>
-                <Text style={styles.contactText}>@mikabites</Text>
-              </TouchableOpacity>
-
-              <TouchableOpacity
-                style={styles.contactItem}
-                onPress={() => openLink('https://mikabites.com')}
-              >
-                <Text style={styles.contactIcon}>🌐</Text>
-                <Text style={styles.contactText}>www.mikabites.com</Text>
-              </TouchableOpacity>
+              <View style={styles.addressItem}>
+                <Text style={styles.contactIcon}>📍</Text>
+                <Text style={styles.addressText}>
+                  157 J, Street 1, Sector J,{'\n'}
+                  Phase V, DHA, Lahore,{'\n'}
+                  54000, Pakistan
+                </Text>
+              </View>
             </View>
 
             {/* App Info */}
@@ -363,14 +348,27 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: moderateScale(10),
   },
+  addressItem: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingVertical: moderateScale(8),
+  },
   contactIcon: {
-    fontSize: moderateScale(18),
+    fontSize: moderateScale(20),
     marginRight: moderateScale(12),
+    marginTop: moderateScale(2),
   },
   contactText: {
     fontSize: moderateScale(14),
     color: '#2C3E50',
     fontWeight: '500',
+  },
+  addressText: {
+    fontSize: moderateScale(14),
+    color: '#2C3E50',
+    fontWeight: '500',
+    lineHeight: moderateScale(22),
+    flex: 1,
   },
   appInfoSection: {
     padding: moderateScale(20),
