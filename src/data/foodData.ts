@@ -268,7 +268,7 @@ export const pakistaniFoods: FoodItem[] = [
     id: '7',
     name: 'Daal Chawal',
     urduName: 'دال چاول',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800',
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800',
     description: 'Comforting lentils served with steamed rice. The ultimate Pakistani comfort food for every occasion.',
     prepTime: '10 mins',
     cookTime: '40 mins',
