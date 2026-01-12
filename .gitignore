@@ -39,3 +39,8 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+yarn.lock
+.yarn
+# Android Keystore
+# *.keystore
+credentials.json
